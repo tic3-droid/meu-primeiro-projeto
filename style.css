@@ -1,7 +1,7 @@
 body {
-    background-color: #0d1117; /* Fundo escuro igual ao do GitHub */
+    background-color: #0a0e17; /* Fundo azul-escuro profundo */
     color: #ffffff;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,24 +10,42 @@ body {
 }
 
 .card {
-    background-color: #161b22;
-    padding: 30px;
-    border-radius: 10px;
+    background-color: #121824; /* Cartão um pouco mais claro que o fundo */
+    padding: 40px 30px;
+    border-radius: 16px;
     text-align: center;
-    border: 1px solid #30363d;
+    border: 1px solid #1f293d;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Sombra suave para dar destaque */
+    max-width: 300px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 8px;
+    color: #00d4ff; /* Nome em azul ciano brilhante */
+}
+
+p {
+    font-size: 14px;
+    color: #94a3b8; /* Texto de descrição em cinza claro */
+    margin-bottom: 25px;
+    line-height: 1.5;
 }
 
 a {
     display: block;
-    background-color: #238636; /* Botão verde */
+    background: linear-gradient(135deg, #7928ca, #ff0080); /* Botão degradê roxo e rosa */
     color: white;
-    padding: 10px 20px;
-    margin: 10px 0;
+    padding: 12px;
+    margin: 12px 0;
     text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: transform 0.2s, filter 0.2s; /* Animação suave ao passar o mouse */
 }
 
 a:hover {
-    background-color: #2ea043; /* Verde mais claro ao passar o mouse */
+    transform: translateY(-2px); /* Botão sobe levemente */
+    filter: brightness(1.2); /* Botão brilha um pouco mais */
 }
